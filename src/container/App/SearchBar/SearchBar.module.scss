@@ -1,13 +1,18 @@
 .searchDiv {
     width: 100%;
-    background-color: black;
+    text-align: center;
     padding: 10px;
 
     .searchBar {
         text-align: center;
-        padding: 5px;
+        padding: 7px;
         width: 300px;
         border-radius: 10px;
+        border: none;
+
+        &:focus {
+            outline: none;
+        }
         
     }
 }

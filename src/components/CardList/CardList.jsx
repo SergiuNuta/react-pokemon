@@ -11,15 +11,12 @@ export default class CardList extends Component {
             <React.Fragment>
                 {this.props.cardData ?(
                 <section className={styles.cards}>
-                    {this.props.cardData.map((pet, id) => (
-                             <Card cardData={pet} key={id} />
-                             
-                         ))}
+                    {this.props.cardData.map((pet, index) => (
+                             <Card cardData={pet} key={index} />                         
+                         ))}      
                  </section>):(
                      <h1>Loading data...</h1>
-                 )}
-                    
-                
+                 )} 
             </React.Fragment>
         );
     }
