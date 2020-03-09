@@ -13,11 +13,12 @@ export default class Card extends Component {
         const url = this.props.cardData.url;
         const pokemonIndex = url.split('/')[url.split('/').length - 2];
         const imageUrl = `https://github.com/PokeAPI/sprites/blob/master/sprites/pokemon/${pokemonIndex}.png?raw=true`;
+        // const imageUrl = `http://assets.pokemon.com/assets/cms2/img/pokedex/full/00${pokemonIndex}.png?raw=true`;
         this.setState({
             imageUrl,
             pokemonIndex
         });
-        // console.log(imageUrl);s
+        console.log(url);
     }
 
     render() {
