@@ -12,7 +12,6 @@ export default class App extends Component {
     apiUrl: 'https://pokeapi.co/api/v2/pokemon/?limit=100',
     searchText: "",
     filteredPokemon: []
-
   }
 
   setSearchText = (event) => {
@@ -38,7 +37,6 @@ export default class App extends Component {
   
 
   // componentDidMount() {
-
   //   fetch("apiUrl")
   //     .then((query) => query.json())
   //     .then((result) => {

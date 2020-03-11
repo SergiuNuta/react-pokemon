@@ -9,16 +9,16 @@ export default class Card extends Component {
         pokemonIndex: ''
     }
 
-    componentDidMount() {
+    get imageUrl() {
         const url = this.props.cardData.url;
         const pokemonIndex = url.split('/')[url.split('/').length - 2];
-        const imageUrl = `https://github.com/PokeAPI/sprites/blob/master/sprites/pokemon/${pokemonIndex}.png?raw=true`;
-        // const imageUrl = `http://assets.pokemon.com/assets/cms2/img/pokedex/full/00${pokemonIndex}.png?raw=true`;
-        this.setState({
-            imageUrl,
-            pokemonIndex
-        });
-        console.log(url);
+        return  `https://github.com/PokeAPI/sprites/blob/master/sprites/pokemon/${pokemonIndex}.png?raw=true`;
+    }
+
+    get pokemonIndex() {
+        const url = this.props.cardData.url;
+        const pokemonIndex = url.split('/')[url.split('/').length - 2];
+        return pokemonIndex;
     }
 
     render() {
@@ -27,9 +27,9 @@ export default class Card extends Component {
             <div className={styles.cardWrapper}>
                 <section className={styles.header}>
                     <p>{cardData.name.toUpperCase()} </p>
-                    <p>HP: {this.state.pokemonIndex}</p>
+                    <p>HP: {this.pokemonIndex}</p>
                 </section>
-                <img src={this.state.imageUrl} className={styles.picture} />
+                <img src={this.imageUrl} className={styles.picture} />
                 <section className={styles.header}>
                     <p>Skill</p>
                     <p>Number</p>

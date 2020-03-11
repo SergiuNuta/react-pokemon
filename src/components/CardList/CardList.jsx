@@ -8,7 +8,7 @@ export default class CardList extends Component {
     render() {
         // console.log(this.props.cardData);
         return(
-            <React.Fragment>
+            <>
                 {this.props.cardData ?(
                 <section className={styles.cards}>
                     {this.props.cardData.map((pet, index) => (
@@ -17,7 +17,7 @@ export default class CardList extends Component {
                  </section>):(
                      <h1>Loading data...</h1>
                  )} 
-            </React.Fragment>
+            </>
         );
     }
 }
