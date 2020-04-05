@@ -6,7 +6,7 @@ import styles from "./CardList.module.scss";
 
 export default class CardList extends Component {
     render() {
-        // console.log(this.props.cardData);
+        
         return(
             <>
                 {this.props.cardData ?(

@@ -23,7 +23,7 @@ export default class App extends Component {
   filteredPokemon = () => {
     let filteredPokemon = this.state.pokemons.filter(pokemon => {
       return pokemon.name.includes(this.state.searchText);
-      
+
     });
     this.setState({ filteredPokemon });
     // console.log(filteredPokemon);
@@ -32,23 +32,12 @@ export default class App extends Component {
   async componentDidMount() {
     const res = await axios.get(this.state.apiUrl);
     this.setState({ pokemons: res.data['results'], filteredPokemon: res.data['results'] });
-    // console.log(this.state.pokemons);
+    // console.log(res);
   }
-  
-
-  // componentDidMount() {
-  //   fetch("apiUrl")
-  //     .then((query) => query.json())
-  //     .then((result) => {
-  //       this.setState({ filteredUsers: result.pokemons, pokemons: result.pokemons });
-  //     }); 
-       
-  // }
-
 
   render() {
 
-
+// console.log(this.state.pokemons)
     return (
       <div className={styles.app}>
         <img src={image} className={styles.image} />
