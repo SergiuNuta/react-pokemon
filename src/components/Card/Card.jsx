@@ -79,17 +79,16 @@ export default class Card extends Component {
 
     render() {
         const cardData = this.props.cardData;
-        // console.log(this.state.stats.hp)
         return (
             <div className="col">
                 <section className={styles.wrapper}>
                 <div className={styles.card}>
                     <div className="card-header">
                         <div className="row">
-                            <div className="col-7">
-                                <h7>{cardData.name.toUpperCase()}</h7>
-                            </div>
                             <div className="col-5">
+                                <h6>{cardData.name.toUpperCase()}</h6>
+                            </div>
+                            <div className="col-6">
                                 <div className="float-right">
                                     {this.pokemonIndex}
                                 </div>
@@ -106,10 +105,10 @@ export default class Card extends Component {
                             </div>
                             <div className="col-md-9">
                                 <div className="row align-items-center">
-                                    <div className="col-12 col-md-3">
+                                    <div className="col-12 col-md-4">
                                         HP
                                     </div>
-                                    <div className="col-12 col-md-9">
+                                    <div className="col-12 col-md-8">
                                         <div className="progress">
                                             <div
                                                 className="progress-bar "
@@ -128,10 +127,10 @@ export default class Card extends Component {
                                     </div>
                                 </div>
                                 <div className="row align-items-center">
-                                    <div className="col-12 col-md-3">
+                                    <div className="col-12 col-md-4">
                                         Attack
                                     </div>
-                                    <div className="col-12 col-md-9">
+                                    <div className="col-12 col-md-8">
                                         <div className="progress">
                                             <div
                                                 className="progress-bar"
@@ -150,10 +149,10 @@ export default class Card extends Component {
                                     </div>
                                 </div>
                                 <div className="row align-items-center">
-                                    <div className="col-12 col-md-3">
+                                    <div className="col-12 col-md-4">
                                         Defense
                   </div>
-                                    <div className="col-12 col-md-9">
+                                    <div className="col-12 col-md-8">
                                         <div className="progress">
                                             <div
                                                 className="progress-bar "
@@ -172,10 +171,10 @@ export default class Card extends Component {
                                     </div>
                                 </div>
                                 <div className="row align-items-center">
-                                    <div className="col-12 col-md-3">
+                                    <div className="col-12 col-md-4">
                                         Speed
                   </div>
-                                    <div className="col-12 col-md-9">
+                                    <div className="col-12 col-md-8">
                                         <div className="progress">
                                             <div
                                                 className="progress-bar"
@@ -194,10 +193,10 @@ export default class Card extends Component {
                                     </div>
                                 </div>
                                 <div className="row align-items-center">
-                                    <div className="col-12 col-md-3">
+                                    <div className="col-12 col-md-4">
                                         Sp Atk
                   </div>
-                                    <div className="col-12 col-md-9">
+                                    <div className="col-12 col-md-8">
                                         <div className="progress">
                                             <div
                                                 className="progress-bar "
@@ -216,10 +215,10 @@ export default class Card extends Component {
                                     </div>
                                 </div>
                                 <div className="row align-items-center">
-                                    <div className="col-12 col-md-3">
+                                    <div className="col-12 col-md-4">
                                         Sp Def
                   </div>
-                                    <div className="col-12 col-md-9">
+                                    <div className="col-12 col-md-8">
                                         <div className="progress">
                                             <div
                                                 className="progress-bar "
