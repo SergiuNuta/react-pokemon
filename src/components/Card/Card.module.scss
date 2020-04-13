@@ -1,28 +1,52 @@
-.cardWrapper {
-    margin: 20px;
+// .cardWrapper {
+//     margin: 20px;
+//     width: 300px;
+//     // min-height: 300px;
+//     background-color: white;
+//     box-shadow: 0 10px 6px -6px #777;
+//     border-radius: 10px;
+//     user-select: none;
+
+//     .header {
+//         display: flex;
+//         justify-content: space-between;
+//         margin: 10px;
+//     }
+
+//     .body {
+//         display: grid;
+//         grid-template-columns: 3fr 9fr;
+//         margin: 3px 0;
+//         // overflow: hidden;
+//     }
+
+//     .picture {
+//         width: 100%;
+//         height: 100px;
+//         object-fit: contain;
+//     }
+// }
+
+.wrapper {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.card {
+    margin: 10px 0;
+    background-color: #BBBBBB;
     width: 300px;
-    // min-height: 300px;
-    background-color: white;
-    box-shadow: 0 10px 6px -6px #777;
-    border-radius: 10px;
-    user-select: none;
+    opacity: 0.95;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 
-    .header {
-        display: flex;
-        justify-content: space-between;
-        margin: 10px;
+    &:hover {
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     }
+}
 
-    .body {
-        display: grid;
-        grid-template-columns: 3fr 9fr;
-        margin: 3px 0;
-        // overflow: hidden;
-    }
-
-    .picture {
-        width: 100%;
-        height: 100px;
-        object-fit: contain;  
-    }
+img {
+    width: 5em;
+    height: 5em;
 }
