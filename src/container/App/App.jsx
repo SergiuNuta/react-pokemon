@@ -17,7 +17,6 @@ export default class App extends Component {
   setSearchText = (event) => {
     const searchText = event.target.value;
     this.setState({ searchText }, this.filteredPokemon);
-    // console.log(searchText);
   }
 
   filteredPokemon = () => {
@@ -26,18 +25,15 @@ export default class App extends Component {
 
     });
     this.setState({ filteredPokemon });
-    // console.log(filteredPokemon);
   }
 
   async componentDidMount() {
     const res = await axios.get(this.state.apiUrl);
     this.setState({ pokemons: res.data['results'], filteredPokemon: res.data['results'] });
-    // console.log(res);
   }
 
   render() {
-
-// console.log(this.state.pokemons)
+    // console.log(this.state.filteredPokemon)
     return (
       <div className={styles.app}>
         <img src={image} className={styles.image} />
