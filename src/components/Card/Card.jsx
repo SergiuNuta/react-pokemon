@@ -101,6 +101,7 @@ export default class Card extends Component {
                                 <img
                                     src={this.imageUrl}
                                     className="card-img-top rounded mx-auto mt-2"
+                                    alt={cardData.name}
                                 />
                             </div>
                             <div className="col-md-9">
