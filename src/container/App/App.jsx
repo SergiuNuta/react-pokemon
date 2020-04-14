@@ -36,7 +36,7 @@ export default class App extends Component {
     // console.log(this.state.filteredPokemon)
     return (
       <div className={styles.app}>
-        <img src={image} className={styles.image} alt="icon image" />
+        <img src={image} className={styles.image} alt="icon" />
         <h1>Pokemon finder</h1>
         <SearchBar searchText={this.state.searchText} setSearchText={this.setSearchText} />
         <CardList cardData={this.state.filteredPokemon}/>
