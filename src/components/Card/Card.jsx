@@ -242,7 +242,12 @@ export default class Card extends Component {
                 </div>
                 </section>
             </div>
-            /* // <div className={styles.cardWrapper}>
+        );
+    }
+}
+
+
+   /* // <div className={styles.cardWrapper}>
             //     <section className={styles.header}>
             //         <p>{cardData.name.toUpperCase()} </p>
             //         <p>{this.pokemonIndex}</p>
@@ -357,6 +362,3 @@ export default class Card extends Component {
             //         </div>
             //         </section>
             // </div>
-        );
-    }
-}
