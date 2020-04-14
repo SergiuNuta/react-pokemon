@@ -33,7 +33,6 @@ export default class App extends Component {
   }
 
   render() {
-    // console.log(this.state.filteredPokemon)
     return (
       <div className={styles.app}>
         <img src={image} className={styles.image} alt="icon" />
