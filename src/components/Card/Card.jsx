@@ -95,12 +95,12 @@ export default class Card extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className="card-body">
+                    <div className="card-body text-sm-left">
                         <div className="row align-items-center">
                             <div className="col-md-3">
                                 <img
                                     src={this.imageUrl}
-                                    className="card-img-top rounded mx-auto mt-2"
+                                    className="rounded mx-auto"
                                     alt={cardData.name}
                                 />
                             </div>

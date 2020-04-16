@@ -1,32 +1,3 @@
-// .cardWrapper {
-//     margin: 20px;
-//     width: 300px;
-//     // min-height: 300px;
-//     background-color: white;
-//     box-shadow: 0 10px 6px -6px #777;
-//     border-radius: 10px;
-//     user-select: none;
-
-//     .header {
-//         display: flex;
-//         justify-content: space-between;
-//         margin: 10px;
-//     }
-
-//     .body {
-//         display: grid;
-//         grid-template-columns: 3fr 9fr;
-//         margin: 3px 0;
-//         // overflow: hidden;
-//     }
-
-//     .picture {
-//         width: 100%;
-//         height: 100px;
-//         object-fit: contain;
-//     }
-// }
-
 .wrapper {
     display: flex;
     justify-content: space-evenly;
@@ -47,7 +18,7 @@
 }
 
 img {
-    width: 5em;
-    height: 5em;
+    width: 6em;
+    height: 6em;
     object-fit: contain;
 }
